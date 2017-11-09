@@ -310,6 +310,8 @@
     * MixIn(混合) [具体参考](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014318680104044a55f4a9dbf8452caf71e8dc68b75a18000)
         > MixIn的目的就是给一个类增加多个功能,这样,在设计类的时候,我们优先考虑通过多重继承来组合多个MixIn的功能,而不是设计多层次的复杂的继承关系。
 * 定制类
+    > Python的class允许定义许多定制方法,可以让我们非常方便的生成特定的类。
+
     * \_\_str__
         > \_\_str__() 返回用户看到的字符串
 
@@ -322,5 +324,85 @@
     * \_\_setitem__ 把对象视为list或dict来对集合赋值
     * \_\_delitem__ 用于删除元素
     * \_\_getattr__
+    * \_\_call__
+        > 通过callable()函数,就可以判断一个对象是否是"可调用"对象
 * 使用枚举类
+    > @unique装饰器可以帮助我们检查保证没有重复值。
+
+    >既可以用成员名称引用枚举常量，又可以直接根据value的值获得枚举常量。
+
+    >Enum可以把一组相关常量定义在一个class中，且class不可变，而且成员可以直接比较。
 * 使用元类
+    >动态语言和静态语言最大的不同就是函数和类的定义,不是编译时定义的,而是运行时动态创建的。
+
+    * type() 
+        >可以查看一个类型或变量的类型
+    
+        > type()函数既可以返回一个对象的类型,又可以创建出新的类型
+    
+        > 通过type()函数创建的类和直接写class是完全一样的,因为Python解释器遇到class定义时,仅仅是扫描一下class定义的语法,然后调用type()函数创建出class
+    
+    * metaclass
+        > 控制类的创建行为
+        
+        > 先定义metaclass,就可以创建类,最后创建实例。
+
+        > metaclass允许我们创建类或者修改类
+
+* 错误 调试 测试
+    * 错误处理
+    * 调试
+    * 单元测试
+    * 文档测试
+* IO编程
+    * 文件读写
+    * StringIO和BytesIO
+    * 操作文件和目录
+    * 序列化
+* 进程和线程
+    * 多进程
+    * 多线程
+    * ThreadLocal
+    * 进程 vs. 线程
+    * 分布式进程
+* 正则表达式
+* 常用内建模块
+    * datetime
+    * collections
+    * base64
+    * struct
+    * hashlib
+    * itertools
+    * contextlib
+    * XML
+    * HTMLParser
+    * urllib
+* 常用第三方模块
+    * PIL
+* virtualenv
+* 图形界面
+* 网络编程
+    * TCP/IP简介
+    * TCP编程
+    * UDP编程
+* 电子邮件
+    * SMTP发送邮件
+    * POP3收取邮件
+* 访问数据库
+    * 使用SQLite
+    * 使用MySQL
+    * 使用SQLAlchemy
+* web开发
+    * HTTP协议简介
+    * HTML简介
+    * WSGI接口
+    * 使用web框架
+    * 使用模板
+* 异步IO
+    * 协程
+    * esyncio
+    * async/await
+    * aiohttp
+* 实战
+
+        
