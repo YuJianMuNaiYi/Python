@@ -350,7 +350,24 @@
         > metaclass允许我们创建类或者修改类
 
 * 错误 调试 测试
+    >Python的pdb可以让我们以单步方式执行代码。
+    
     * 错误处理
+        >Python的错误其实也是class,所有的错误类型都继承自BaseException,所以在使用exception时需要注意的是,它不但捕获该类型的错误,还把其子类也"一网打尽"
+
+        > [Python所有的错误处理都是从BaseException类派生的,常见的错误类型和继承关系](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
+        
+        * 调用堆栈
+            > 如果错误没有被捕获,它就会一直往上抛,最后被Python解释器捕获,打印一个错误信息,然后程序退出。
+
+        * 记录错误
+            > Python内置logging模块  通过配置还可以把错误记录到日志文件里,方便事后排查。
+        
+        * 抛出错误
+            > 因为错误是class,捕获一个错误就是捕获到该class的一个实例。因此,错误并不是凭空产生的,而是有意创建并抛出的。Python的内置函数会抛出很多类型的错误,我们自己编写的函数也可以抛出错误。
+
+            >raise语句如果不带参数,就会把当前错误原样抛出。此外,在except中raise一个Error,还可以把一种类型的错误转化成另一种类型。只要是合理的转换逻辑就可以，但是，决不应该把一个IOError转换成毫不相干的ValueError。
+            
     * 调试
     * 单元测试
     * 文档测试
@@ -404,5 +421,3 @@
     * async/await
     * aiohttp
 * 实战
-
-        
