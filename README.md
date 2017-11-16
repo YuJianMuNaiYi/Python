@@ -403,9 +403,45 @@
         > doctest非常有用,不但可以 用来测试,还可以直接作为示例代码。通过某些文档生成工具,就可以自动把包含doctest的注释提取出来。用户看文档的时候,同时也看到了doctest。
         
 * IO编程
+    > Input Stream 就是数据从外面(磁盘,网络)流进内存,Output Stream就是数据从内存流到外面去。
+
+    > 同步IO和异步IO 同步和异步的区别就在于是否等待IO执行的结果。
+    
+    >异步IO 回调模式 轮询模式
+
     * 文件读写
+        > 在磁盘上读写文件的功能都是操作系统提供的,现代操作系统不允许普通的程序直接操作磁盘,所以,读写文件就是请求操作系统打开一个文件对象(通常称为文件描述符),然后,通过操作系统提供的接口从这个文件对象中读取数据(读文件),或者把数据写入这个文件对象(写文件)。
+
+        * 读文件
+            > read()会一次性读取文件的全部内容
+
+            >read(size)每次最多读取size个字节的内容
+
+            >readline()每次读取一行内容
+
+            >readlines()一次读取所有内容并按行返回list
+
+            > for line in f.readlines():
+            
+            > print(line.strip()) # 把末尾的'\n'删掉
+
+            * file-like Object
+                > 像open()函数返回的这种有个read()方法的对象，在Python中统称为file-like Object。除了file外，还可以是内存的字节流，网络流，自定义流等等。file-like Object不要求从特定类继承，只要写个read()方法就行。
+
+                > StringIO就是在内存中创建的file-like Object，常用作临时缓冲。
+            
+            * 二进制文件
+            * 字符编码
+
+        * 写文件
+
     * StringIO和BytesIO
+        > StringIO顾名思义就是在内存中读写str getvalue()方法用于获得写入后的str。
+        
+        > StringIO和BytesIO是在内存中操作str和bytes的方法，使得和读写文件具有一致的接口。
+
     * 操作文件和目录
+        * 环境变量
     * 序列化
 * 进程和线程
     * 多进程
