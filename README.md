@@ -572,14 +572,38 @@
     > 如果要存储 datetime，最佳方法是将其转换为 timestamp 再存储，因为 timestamp 的值与时区完全无关。
 
   * collections
-  * base64
-  * struct
-  * hashlib
-  * itertools
-  * contextlib
-  * XML
-  * HTMLParser
-  * urllib
+
+    > collections 是 Python 内建的一个集合模块,提供了许多有用的集合类 。
+
+    * namedtuple
+
+      > namedtyple 是一个函数,它用来创建一个自定义的 tuple 对象,并且规定了 tuple 元素的个数,并可以用属性而不是索引来引用 tuple 的某个元素。
+
+    * deque
+
+      > deque 是为了高效实现插入和删除操作的双向列表,适合用于队列和栈
+
+    * defaultdict
+
+      > 使用 dict 时，如果引用的 Key 不存在，就会抛出 KeyError。如果希望 key 不存在时，返回一个默认值，就可以用 defaultdict。
+
+      > 注意默认值是调用函数返回的，而函数在创建 defaultdict 对象时传入。
+
+      > 除了在 Key 不存在时返回默认值，defaultdict 的其他行为跟 dict 是完全一样的。
+
+      > OrderedDict 的 Key 会按照插入的顺序排列，不是 Key 本身排序
+
+    * Counter
+      > Counter 是一个简单的计数器
+
+* base64
+* struct
+* hashlib
+* itertools
+* contextlib
+* XML
+* HTMLParser
+* urllib
 
 - 常用第三方模块
   * PIL
