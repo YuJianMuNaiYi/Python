@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbd9a3c8-15eb-4e0a-a556-a9fe3972daaf" name="Default" comment="1.增加函数参数(必选参数,默认参数,可变参数,关键字参数,命名关键字参数,参数组合)">
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/test_collections.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/day11/test_base64.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/day11/test_hashlib.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -43,11 +44,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_collections.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_collections.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day11/test_collections.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="67" column="74" lean-forward="true" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
+              <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_base64.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day11/test_base64.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_hashlib.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day11/test_hashlib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -80,8 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/day4/AboutDecorator/Decorator7.py" />
-        <option value="$PROJECT_DIR$/day4/Filter.py" />
         <option value="$PROJECT_DIR$/day4/HigherOrderFunction.py" />
         <option value="$PROJECT_DIR$/day4/AboutDecorator/Decorator8.py" />
         <option value="$PROJECT_DIR$/day4/DecoratorStudy.py" />
@@ -131,6 +150,8 @@
         <option value="$PROJECT_DIR$/day10-Thread/task_worker.py" />
         <option value="$PROJECT_DIR$/day11/test_datetime.py" />
         <option value="$PROJECT_DIR$/day11/test_collections.py" />
+        <option value="$PROJECT_DIR$/day11/test_base64.py" />
+        <option value="$PROJECT_DIR$/day11/test_hashlib.py" />
       </list>
     </option>
   </component>
@@ -141,8 +162,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2032" />
-    <option name="y" value="253" />
+    <option name="x" value="2686" />
+    <option name="y" value="130" />
     <option name="width" value="1400" />
     <option name="height" value="920" />
   </component>
@@ -180,6 +201,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -201,7 +223,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,18 +484,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day4/PartialFunction/partialFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5/thumb.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day3/Generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4">
@@ -815,7 +824,23 @@
     <entry file="file://$PROJECT_DIR$/day11/test_collections.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="67" column="74" lean-forward="true" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
+          <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11/test_base64.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day11/test_hashlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
           <folding />
         </state>
       </provider>
