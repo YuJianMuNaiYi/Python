@@ -611,8 +611,21 @@
 
   > 摘要算法之所以能指出数据是否被篡改过,就是因为摘要函数是一个单向函数,计算 f(data)很容易,但通过 digest 反推 data 却非常困难。而且,对原始数据做一个 bit 的修改,都会导致计算出的摘要完全不同。
 
+* hmac
+
+  > Keyed-Hashing for Message Authentication。它通过一个标准算法，在计算哈希的过程中，把 key 混入计算过程中。
+
+  > Hmac 算法针对所有哈希算法都通用，无论是 MD5 还是 SHA-1。采用 Hmac 替代我们自己的 salt 算法，可以使程序算法更标准化，也更安全。
+
 * itertools
+
+  > 提供了非常有用的用于操作迭代对象的函数
+  > itertools 模块提供的全部是处理迭代功能的函数，它们的返回值不是 list，而是 Iterator，只有用 for 循环迭代的时候才真正计算。
+
 * contextlib
+
+  > 并不是只有 open()函数返回的 fp 对象才能使用 with 语句。实际上，任何对象，只要正确实现了上下文管理，就可以用于 with 语句。
+
 * XML
 * HTMLParser
 * urllib
