@@ -20,12 +20,12 @@ class Query(object):
 
 # 现在这样就可以把自己写的资源对象用于with语句
 
-with Query("Bob") as q:
+with Query("ZhangSan") as q:
     q.query()
 
 # 编写__enter__和__exit__仍然很繁琐，因此Python的标准库contextlib提供了更简单的写法,上面的代码可以改写如下
 
-from  contextlib import contextmanager
+from  contextlib import contextmanager,closing
 
 class Query1(object):
     def __init__(self,name):
@@ -40,7 +40,7 @@ def CreateQuery(name):
     q=Query1(name)
     yield q
     print('End')
-# @contextmanager这个decorator接受一个generator，用yield语句把with ... as var把变量输出出去，然后，with语句就可以正常地工作了
+# @contextmanager这个decorator(装饰器)接受一个generator(生成器)，用yield语句把with ... as var把变量输出出去，然后，with语句就可以正常地工作了
 
 with CreateQuery('Bob') as q:
     q.query()
@@ -59,3 +59,11 @@ with tag('h1'):
     print("world")
 
 # @contextmanager让我们通过编写generator来简化上下文管理。
+
+# @closing 如果一个对象没有实现上下文,我们就不能把它用于with语句。这个时候,可以用closing()来把该对象变为上下文对象,
+
+from urllib.request import urlopen
+
+with closing(urlopen('https://www.python.org')) as page:
+    for line in page:
+        print(line)
