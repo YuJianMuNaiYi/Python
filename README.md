@@ -647,7 +647,13 @@
   > 利用 HTMLParser.可以把网页中的文本,图像等解析出来。
 
 - 常用第三方模块
+
   * PIL
+    > PIL 提供了操作图像的强大功能,可以通过简单的代码完成复杂的图像处理。
+  * requests
+  * chardet
+  * psutil
+
 - virtualenv
 - 图形界面
 - 网络编程
