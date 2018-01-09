@@ -652,7 +652,20 @@
     > PIL 提供了操作图像的强大功能,可以通过简单的代码完成复杂的图像处理。
   * requests
   * chardet
+
+    > 用 chardet 检测编码,使用简单 。获取到编码后,再转换为 str,就可以方便后续处理。
+
+    > [chardet 支持检测的编码列表](https://chardet.readthedocs.io/en/latest/supported-encodings.html)
+
+    > 使用 chardet 检测编码非常简单,chardet 支持检测中文、日文、韩文等多种语言。
+
   * psutil
+
+    > process and system utilities,它不仅可以通过一两行代码实现系统监控,还可以跨平台使用,支持 Linux／UNIX／OSX／Windows 等，是系统管理员和运维小伙伴不可或缺的必备模块。
+
+    > psutil 使得 Python 程序获取系统信息变得易如反掌。
+
+    > [psutil 还可以获取用户信息、windows 服务等很多有用的系统信息](https://github.com/giampaolo/psutil)
 
 - virtualenv
 - 图形界面
