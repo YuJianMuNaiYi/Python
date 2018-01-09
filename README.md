@@ -668,7 +668,22 @@
     > [psutil 还可以获取用户信息、windows 服务等很多有用的系统信息](https://github.com/giampaolo/psutil)
 
 - virtualenv
+
+  > virtualenv 就是用来为一个应用创建一套"隔离"的 python 运行环境。
+
+  > virrualenv 为应用提供了隔离的 python 运行环境,解决了不同应用间多版本的冲突问题。
+
 - 图形界面
+
+  > python 支持多种图形界面的第三方库,包括:Tk、wxWidgets、Qt、GTK 等。
+
+  * Tkinter
+
+    > Tk 是一个图形库,支持多个操作系统,使用 Tcl 语言开发。
+    > Tk 会调用操作系统提供的本地的 GUI 接口,完成最终的 GUI。
+
+    > python 内置的 Tkinter 可以满足基本的 GUI 程序的要求,如果是非常复杂的 GUI 程序,建议用操作系统原生支持的语言和库来编写。
+
 - 网络编程
   * TCP/IP 简介
   * TCP 编程
