@@ -702,12 +702,32 @@
     > UDP 的使用与 TCP 类似,但是不需要建立连接。此外,服务器绑定 UDP 端口和 TCP 端口互不冲突,也就是说,UDP 的 9999 端口与 TCP 的端口可以各自绑定。
 
 - 电子邮件
+
+  > MUA---Mail User Agent:邮件用户代理
+
+  > MTA---Mail Transfer Agent:邮件传输代理
+
+  > MDA---Mail Delivery Agent:邮件投递代理
+
+  > 发送邮件时,MUA 和 MTA 使用的协议就是 SMTP:Simple Mail Transfer Protocol,MTA 到另一个 MTA 也是用 SMTP 协议。
+
+  > 收邮件时,MUA 和 MDA 使用的协议有两种:POP:Post Office Protocol,目前版本时 3,俗称 POP3,IMAP:Internet Message Access Protocol,目前版本是 4,优点是不但能取邮件,还可以直接操作 MDA 上存储的邮件,比如从收件箱移到垃圾箱等。
+
   * SMTP 发送邮件
+    > 支持的模块:smtplib 和 email,email 负责构造邮件,smtplib 负责发送邮件。
   * POP3 收取邮件
+
 - 访问数据库
+
   * 使用 SQLite
+
+    > 在 Python 中操作数据库时,要先导入数据库对应的驱动,然后,通过 Connection 对象和 Cursor 对象操作数据。要确保打开的 Connection 和 Cursor 对象都正确地被关闭,否则,资源就会泄露。
+
   * 使用 MySQL
   * 使用 SQLAlchemy
+    > ORM 框架
+    > ORM 框架的作用就是把数据库表的一行记录与一个对象互相做自动转换。
+
 - web 开发
   * HTTP 协议简介
   * HTML 简介
