@@ -735,7 +735,19 @@
   * HTTP 协议简介
   * HTML 简介
   * WSGI 接口
+
+    > WSGI,Web Server Gateway interface
+    > 无论多复杂的 web 应用程序,入口都是一个 WSGI 处理函数。HTTP 请求的所有输入信息都可以通过 environ 获得,HTTP 响应的输出都可以通过 start_response()加上函数返回值作为 Body。
+
   * 使用 web 框架
+
+    > 除了 Flask,常见的 Python Web 框架还有:
+
+    * [Django:全能型 Web 框架](https://www.djangoproject.com/)
+    * [web.py:一个小巧的 Web 框架](http://webpy.org/)
+    * [Bottle:和 Flask 类似的 Web 框架](http://bottlepy.org/docs/dev/)
+    * [Tornado:Facebook 的开源异步 Web 框架](http://www.tornadoweb.org/)
+
   * 使用模板
 
 - 异步 IO
